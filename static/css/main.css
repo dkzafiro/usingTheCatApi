@@ -1,0 +1,56 @@
+.card{
+    display: flex;        
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom:80px;
+    background:rgb(253, 222, 253);
+    border-radius:10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+    z-index:1;
+    border-style: ridge;
+    width: 800px;
+    text-align: left;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.btn-primary{
+    
+    padding:1em;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin:0 auto;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.cont{
+    width: 100%;
+    text-align: center;
+}
+
+.cardDiv{
+    position:relative;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
