@@ -13,15 +13,18 @@
           <img src="https://media.tenor.com/images/01c4a5b287dbd39390d9256dda57c741/tenor.gif" id="imagecat"  class="card-img-top"  alt="Click Meow">
           <div class="card-body">
             <h5 class="card-title">A Random Cute Cat</h5>
-            <p class="card-text">Click to get a Random Cute Cat</p>
+            <p id="textfact" class="card-text"></p>
             <div class="cont">
               <a href="/randomcat" onclick="getUrlForImg();" class="btn btn-primary">Meow</a>
             </div>
             <script>
               function getUrlForImg(){
                 var urlCat = '{{urlCat}}';
+                var textfact = '{{textFact}}';
                 var image1 = document.getElementById('imagecat');
+                var text1 = document.getElementById('textfact');
                 image1.setAttribute("src", urlCat);
+                text1.textContent = textfact;
               }
               getUrlForImg();
             </script>

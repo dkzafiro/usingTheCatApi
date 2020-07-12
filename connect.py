@@ -10,6 +10,13 @@ class getApiRest:
         url = datosJson[0]['url']
         return url
     
+    def getCatFact(self):
+        endpoint = "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2" 
+        x = requests.get(endpoint)
+        datosJson = x.json()
+        text = datosJson[0]['text']
+        return text
+    
 
 
 

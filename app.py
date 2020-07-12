@@ -7,12 +7,14 @@ api = getApiRest()
 @app.route("/")
 def home():
 	url = api.getUrl()
-	return render_template("index.html", urlCat = url)
+	text = api.getCatFact()
+	return render_template("index.html", urlCat = url, textFact = text)
 
 @app.route("/randomcat")
 def getCat():
 	url = api.getUrl()
-	return render_template("index.html", urlCat = url)
+	text = api.getCatFact()
+	return render_template("index.html", urlCat = url , textFact = text)
 
 
 if __name__ == "__main__":
